@@ -53,5 +53,51 @@ One Linux VM (Ubuntu) with outbound internet and a public IP (for demo)
 
 Entra ID P1/P2 for Sign-in logs
 
+---
+
+Keep artifacts, stop costs (safe to keep for portfolio)
+
+This keeps your workbook/rules so you can show the project later, but stops ingestion/compute.
+
+Stop log ingestion
+
+Subscription Activity Logs
+
+Azure Portal → Subscriptions → your sub → Activity log → Export Activity Logs / Diagnostic settings → Delete the setting that sends to your workspace.
+
+(If you used Policy) Azure Portal → Policy → Assignments → find “Configure Azure Activity logs to stream…” → Delete assignment (also deletes the system-assigned MI it created).
+
+Entra ID (Azure AD) logs (if you enabled them)
+
+Entra admin center → Monitoring → Diagnostic settings → Delete any settings that send Sign-in/Audit logs to your workspace.
+
+Linux Syslog
+
+Azure Portal → Monitor → Data Collection Rules → open your DCR → Delete it (or remove the VM from Resources).
+This stops AMA from shipping logs. The AMA extension can stay—it doesn’t cost by itself.
+
+Shut down/lock down the VM
+
+If you want to keep it: Stop (deallocate) the VM and remove the Public IP (Public IPs incur a small hourly charge).
+
+If you don’t need it: Delete the VM. Confirm the NIC, Public IP, Disk, NSG, and VNet are gone (or delete the whole RG that holds them).
+
+Disable detections (optional)
+
+Microsoft Sentinel → Analytics → select your custom rules → Disable.
+(Rules themselves aren’t billed, but disabling avoids confusion.)
+
+Cap retention / daily cap (prevents storage charges)
+
+Log Analytics workspace → Usage and estimated costs →
+
+Data retention: set to 7–30 days (shorter = cheaper).
+
+Daily cap: set a small cap (e.g., 0.1 GB) or Off if ingestion is fully disabled.
+
+(Optional) Unpublish shared Dashboard
+
+Azure Portal → Dashboard → Share → Unpublish (if you published it). Private dashboards are free.
+
 
 
