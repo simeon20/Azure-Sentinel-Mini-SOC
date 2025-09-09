@@ -26,9 +26,13 @@ Packaged KQL and exported Analytics/Workbook JSON for version control
 
 Portal note: This README uses the new Defender (unified) navigation. When pinning charts/tables, they go to your Azure Portal dashboard, not a Defender-only dashboard.
 
+ ![Over Time Screenshot](FailedSSHAttemptsOverTime.png)
+ ![attempts per user Screenshot](Showattemptsperuser.png)
+ ![Top Source IPs Screenshot](TopSourceIPs(failedSSH).png)
+
 ---
 
-Architecture (high level)
+Architecture:
 
 Azure Activity (subscription) → Export Activity Logs → Log Analytics Workspace (LAW) ⇄ Microsoft Sentinel
 Linux VM → AMA + DCR (Syslog) → LAW ⇄ Microsoft Sentinel
