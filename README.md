@@ -51,7 +51,7 @@ A Log Analytics Workspace (e.g., law-sentinel-demo) with Microsoft Sentinel enab
 
 One Linux VM (Ubuntu) with outbound internet and a public IP (for demo)
 
-(Optional) Entra ID P1/P2 for Sign-in logs; not needed for this project
+Entra ID P1/P2 for Sign-in logs
 
 
 
