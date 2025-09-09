@@ -37,9 +37,9 @@ Sentinel/Monitor → Workbook → Azure Portal Dashboard (pinned tiles)
 
 ----
 
-Prerequisites
+Prerequisites:
 
-Azure subscription with permissions:
+Azure subscription with permissions
 
 Owner on subscription (to export Activity Logs)
 
@@ -55,7 +55,7 @@ Entra ID P1/P2 for Sign-in logs
 
 ---
 
-Keep artifacts, stop costs (safe to keep for portfolio)
+Keep artifacts, stop costs (safe to keep for portfolio):
 
 This keeps your workbook/rules so you can show the project later, but stops ingestion/compute.
 
