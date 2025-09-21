@@ -12,13 +12,9 @@ Connected Azure Activity logs to the workspace using Azure Policy (no agents nee
 
 Authored KQL to normalize sshd failures (parse username & source IP)
 
-Created two Scheduled Analytics rules
+Created a Scheduled Analytics rule
 
 SSH Brute Force (Syslog)
-
-Azure Resource Delete (AzureActivity)
-
-Verified alerts → incidents in the new Defender portal
 
 Built a Workbook dashboard (Top IPs, Timeline, Account+IP) and pinned tiles to the Azure Portal dashboard
 
