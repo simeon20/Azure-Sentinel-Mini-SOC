@@ -59,12 +59,6 @@ Entra ID P1/P2 for Sign-in logs
 
 ---
 
-Keep artifacts, stop costs (safe to keep for portfolio):
-
-This keeps your workbook/rules so you can show the project later, but stops ingestion/compute.
-
-Stop log ingestion
-
 Subscription Activity Logs
 
 Azure Portal → Subscriptions → your sub → Activity log → Export Activity Logs / Diagnostic settings → Delete the setting that sends to your workspace.
