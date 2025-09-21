@@ -59,6 +59,8 @@ Entra ID P1/P2 for Sign-in logs
 
 ---
 
+Stop log ingestion to save money:
+
 Subscription Activity Logs
 
 Azure Portal → Subscriptions → your sub → Activity log → Export Activity Logs / Diagnostic settings → Delete the setting that sends to your workspace.
